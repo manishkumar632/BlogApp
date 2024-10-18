@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'YourCustomFont';
+    src: url('/static/fonts/SFPRODISPLAYREGULAR.OTF') format('opentype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'SFPRODISPLAYREGULAR', sans-serif;
+}
+
+body {
+    position: absolute;
+    inset: 0;
+    background: #f9f8f9;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+main{
+    height: 100%;
+}
+.home {
+    padding: 48px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 24px 4px 24px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+}
+
+label {
+    font-size: 24px;
+}
+
+input {
+    font-size: 24px;
+    outline: none;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.9);
+    border-radius: 5px;
+    border: none;
+    padding: 8px 16px 8px 16px;
+}
+
+button {
+    font-size: 24px;
+    outline: none;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.9);
+    border-radius: 5px;
+    border: none;
+    padding: 8px 16px 8px 16px;
+    max-width: 300px;
+}
+
+.filter-div {
+    padding: 8px 16px 8px 16px;
+    margin-bottom: 16px;
+}
+
+.blog-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.blog-card {
+    background-color: rgb(244, 240, 240);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.9);
+    border-radius: 5px;
+    padding: 8px 16px 8px 16px;
+}
+
+.create-blog {
+    padding: 48px;
+}
+
+.create-blog form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.create-blog form p {
+    display: flex;
+    flex-direction: column;
+}
+
+.create-blog form p input {
+    width: 300px;
+}
+.update-blog{
+    padding: 48px;
+}
+.delete-blog{
+    padding: 48px;
+}
+
+.register-section{
+    padding: 48px;
+}
+
+.register-section p{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.register-section p input{
+    width: 300px;
+}
+
+footer {
+    padding-bottom: 5px;
+    padding-top: 20px;
+    text-align: center;
+}

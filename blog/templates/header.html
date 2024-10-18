@@ -1,0 +1,19 @@
+{% load static %}
+<header>
+    <nav>
+        <img src="{% static 'icons/logo.svg' %}" height="72px" alt="Logo">
+        <div class="nav-links">
+            <a href="{% url 'home' %}">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <a href="{% url 'create_blog' %}">Create Blog</a>
+            {% if user.is_authenticated %}
+            <img src="{% static 'icons/userIcon.svg' %}" width="48px" height="48px" alt="User Icon">
+            {% else %}
+            <a href="{% url 'login' %}">Login</a>
+            <a href="{% url 'register' %}">Register</a>
+            {% endif %}
+        </div>
+    </nav>
+</header>

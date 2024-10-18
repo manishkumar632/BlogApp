@@ -1,0 +1,12 @@
+<!-- blog/templates/blog/update_blog.html -->
+{% extends 'base.html' %}
+{% block content %}
+<section class="update-blog">
+    <h1>Edit Blog</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Save Changes</button>
+    </form>
+</section>
+{% endblock %}
